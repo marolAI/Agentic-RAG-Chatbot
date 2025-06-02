@@ -61,7 +61,7 @@ def create_sidebar():
         
         st.markdown(
             """
-                [![source code](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/shashankdeshpande/langchain-chatbot/blob/master/pages/4_%F0%9F%93%84_chat_with_your_documents.py)
+                [![source code](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/marolAI/Agentic-RAG-Chatbot/blob/main/app.py)
                 
                 🔍[More projects](https://marolai.github.io/projects/)
             """
