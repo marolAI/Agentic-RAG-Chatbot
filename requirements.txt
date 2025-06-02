@@ -1,3 +1,5 @@
+langchain==0.3.25
+langgraph==0.4.7
 ctransformers
 docarray==0.41.0
 faiss_cpu==1.11.0
