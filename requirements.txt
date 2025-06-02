@@ -11,3 +11,4 @@ faiss_cpu==1.11.0
 sentence_transformers==4.1.0
 pypdf==5.5.0
 rapidocr_onnxruntime==1.4.4
+opencv-python-headless==4.11.0.86
