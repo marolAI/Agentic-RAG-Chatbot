@@ -1,5 +1,5 @@
-# Agentic RAG Chatbot
-Agentic RAG Chatbot is an intelligent RAG chatbot that autonomously decides when to retrieve document context and when to respond directly, with built-in truth verification and self-correction.
+# RAGi
+🅡🅐🅖ℹ️ is an intelligent RAG chatbot that autonomously decides when to retrieve document context and when to respond directly, with built-in truth verification and self-correction.
 
 ## Core Features:
 
