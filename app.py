@@ -9,7 +9,9 @@ from chatbot.utils import create_sidebar, StreamHandler
 torch.classes.__path__ = [] # RuntimeError: Tried to instantiate class '__path__._path', but it does not exist!
 
 
-st.set_page_config(page_icon="💡", page_title="AgenticRAGChatbot")
+st.set_page_config(page_icon="ℹ️", page_title="RAGi")
+st.header("**Hi, I am 🅡🅐🅖ℹ️.**")
+st.write("What can I help you today?")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

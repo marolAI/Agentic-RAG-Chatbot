@@ -49,15 +49,19 @@ class StreamHandler(BaseCallbackHandler):
         self.text += token
         self.container.markdown(self.text)
 
+
+def add_space(num_spaces=1):
+    for _ in range(num_spaces):
+        st.write("\n")
+
+
 def create_sidebar():
     with st.sidebar:
-        st.title("♦️ Agentic RAG Chatbot")
+        st.header("🅡🅐🅖ℹ️", divider="gray")
         st.markdown("""
         **Intelligent document understanding** powered by advanced retrieval augmented generation techniques.
         This system understands your documents and answers complex questions with citations.
         """)
-        
-        st.divider()
         
         st.markdown(
             """
@@ -66,6 +70,9 @@ def create_sidebar():
                 🔍[More projects](https://marolai.github.io/projects/)
             """
         )
+        st.divider()
+        add_space(20)
+        
         
         st.divider()
         
