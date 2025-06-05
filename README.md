@@ -1,23 +1,52 @@
-# RAGi
-🅡🅐🅖ℹ️ is an intelligent RAG chatbot that autonomously decides when to retrieve document context and when to respond directly, with built-in truth verification and self-correction.
+# RAGi: Agentic RAG Chatbot
 
-## Core Features:
+## 🅡🅐🅖ℹ️
 
-1. Autonomously decides when to retrieve document context
+RAGi is an intelligent document understanding system powered by advanced Retrieval Augmented Generation (RAG) techniques and an agentic architecture. It's designed to answer complex questions based on your documents by autonomously deciding the best approach, verifying information, and providing responses grounded in specific sources.
 
-2. Self-corrects poorly performing queries
+## Features
 
-3. Verifies document relevance before answering
+*   **Autonomous Context Retrieval:** Intelligently decides when and how to retrieve relevant information from documents rather than relying solely on the language model's parametric memory.
+*   **Self-Correction & Query Refinement:** Features a built-in mechanism to identify potential issues with retrieval or answers and refine the query or approach for better results.
+*   **Source Verification:** Verifies the relevance and truthfulness of retrieved document chunks before incorporating them into the final answer.
+*   **Grounded Responses with Citations:** Prevents hallucinations by ensuring all generated answers are directly supported by the source documents, often allowing for citation or reference back to the source text.
+*   **Intelligent Document Parsing:** Handles various document formats and can extract text from image-based content (like scanned PDFs) using OCR.
 
-4. Prevents hallucinations by grounding responses in sources
+## Tech Stack
 
-##  Quick start
-- Install dependencies:
-```python
-pip install -r requirements.txt
-```
+This project leverages the following key technologies and libraries to achieve its agentic and RAG capabilities:
 
-- Run with:
-```python
-streamlit run app.py
-```
+*   **Python:** The foundational programming language.
+*   **Streamlit:** Provides the interactive and user-friendly web interface.
+*   **Langchain & LangGraph:** Core frameworks for building robust LLM applications. Langchain orchestrates the RAG chains and interactions with various models, while LangGraph is essential for defining the stateful, autonomous agent workflows that enable decision-making and self-correction.
+*   **Groq API**: Provides the underlying large language model (LLM) inference capabilities for summarization and text analysis.
+
+## Quick Start
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/marolAI/Agentic-RAG-Chatbot.git
+    cd Agentic-RAG-Chatbot
+    ```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Set up necessary environment variables (e.g., API keys for Groq, potentially others).
+4.  Run the Streamlit application:
+    ```bash
+    streamlit run app.py
+    ```
+5.  Open your web browser and navigate to the provided local URL (usually `http://localhost:8501`).
+
+## License
+
+This project is licensed under the [MIT License](license.txt).
+
+## Contact
+
+For questions or feedback, please contact the author:
+
+*   **Author:** Andriamarolahy R.
+*   **GitHub:** `https://github.com/marolAI`
+*   **Email: marolahyrabe@gmail.com**
